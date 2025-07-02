@@ -1,22 +1,37 @@
-# DIO - Trilha .NET - Programação orientada a objetos
-www.dio.me
+# 📱 Desafio POO - Sistema de Celulares
 
-## Desafio de projeto
-Para este desafio, você precisará usar seus conhecimentos adquiridos no módulo de orientação a objetos, da trilha .NET da DIO.
+Este projeto foi desenvolvido como parte do módulo de **Programação Orientada a Objetos** da trilha **.NET** da [DIO - Digital Innovation One](https://www.dio.me). O objetivo é aplicar os conceitos fundamentais da orientação a objetos em um sistema de simulação de celulares.
 
-## Contexto
-Você é responsável por modelar um sistema que trabalha com celulares. Para isso, foi solicitado que você faça uma abstração de um celular e disponibilize maneiras de diferentes marcas e modelos terem seu próprio comportamento, possibilitando um maior reuso de código e usando a orientação a objetos.
+## 🧠 Descrição do Desafio
 
-## Proposta
-Você precisa criar um sistema em .NET, do tipo console, mapeando uma classe abstrata e classes específicas para dois tipos de celulares: Nokia e iPhone. 
-Você deve criar as suas classes de acordo com o diagrama abaixo:
+Você é responsável por modelar um sistema que trabalha com celulares. Para isso, foi solicitado que você crie uma **abstração da classe `Smartphone`** e permita que diferentes marcas e modelos (como **Nokia** e **iPhone**) tenham seus próprios comportamentos, promovendo reutilização de código e aplicando os pilares da POO.
 
-![Diagrama classes](Imagens/diagrama.png)
+Este projeto representa um exercício prático da aplicação de herança, abstração e polimorfismo em C#.
 
-## Regras e validações
-1. A classe **Smartphone** deve ser abstrata, não permitindo instanciar e servindo apenas como modelo.
-2. A classe **Nokia** e **Iphone** devem ser classes filhas de Smartphone.
-3. O método **InstalarAplicativo** deve ser sobrescrito na classe Nokia e iPhone, pois ambos possuem diferentes maneiras de instalar um aplicativo.
+## 🎯 Objetivos
 
-## Solução
-O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima.
+- Criar uma classe abstrata `Smartphone` que não pode ser instanciada.
+- Implementar as classes `Nokia` e `Iphone` como filhas de `Smartphone`.
+- Sobrescrever o método `InstalarAplicativo` em cada classe filha, simulando comportamentos diferentes entre as marcas.
+- Utilizar os princípios da Programação Orientada a Objetos: **abstração, encapsulamento, herança e polimorfismo**.
+
+## 📐 Estrutura de Classes
+
+### Classe abstrata: `Smartphone`
+
+Contém as propriedades comuns de qualquer celular, como:
+- Número
+- Modelo
+- IMEI
+- Memória
+
+E métodos como:
+- `Ligar()`
+- `ReceberLigacao()`
+- `InstalarAplicativo()` (abstrato)
+
+### Classes derivadas: `Nokia` e `Iphone`
+
+Essas classes herdam de `Smartphone` e implementam o método `InstalarAplicativo()` de forma distinta, representando como cada sistema operacional instala aplicativos.
+
+## 🧱 Diagrama de Classes (UML simplificado)
