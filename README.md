@@ -34,4 +34,31 @@ E métodos como:
 
 Essas classes herdam de `Smartphone` e implementam o método `InstalarAplicativo()` de forma distinta, representando como cada sistema operacional instala aplicativos.
 
-## 🧱 Diagrama de Classes (UML simplificado)
+## 📌 Regras e Validações
+
+- A classe `Smartphone` **deve ser abstrata** e **não pode ser instanciada diretamente**.
+- As classes `Nokia` e `Iphone` devem obrigatoriamente **herdar de `Smartphone`**.
+- O método `InstalarAplicativo` deve ser **obrigatoriamente sobrescrito** nas classes filhas, respeitando o comportamento específico de cada tipo de aparelho.
+
+## 🎓 Conhecimentos Aplicados
+
+- Lógica de Programação
+- Programação Orientada a Objetos (POO)
+- Classes e Herança
+- Métodos Abstratos e Sobrescrita
+- Estruturação de Projeto em C#
+
+## 📚 Fonte
+
+Projeto proposto pela **DIO - Digital Innovation One**, no curso **Trilha .NET - Programação Orientada a Objetos**.
+
+---
+
+### 👨‍💻 Feito por
+
+**Guilherme Marinho**  
+📘 [github.com/GuilhermeMarinho](https://github.com/GuiMRDS)
+🚀 Desenvolvedor em formação na área de Análise e Desenvolvimento de Sistemas – UNIP  
+🎯 Focado em C#, .NET, Web Design e Inteligência Artificial
+
+---
